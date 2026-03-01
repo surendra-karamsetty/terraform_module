@@ -4,5 +4,5 @@ locals {
         environment = var.environment
         terraform = true
     }
-    final_tags = mergr (local.common_tags,var.tags)
+    final_tags = merge (local.common_tags,var.tags)
 }
